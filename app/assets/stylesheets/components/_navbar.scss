@@ -17,4 +17,14 @@
   border: none;
   background-color: #ff375c;
   border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.btn-add-flat a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.btn-add-flat:hover a {
+  color: #ffff;
 }
