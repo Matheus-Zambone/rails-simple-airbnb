@@ -1,10 +1,19 @@
-<h1><%= "Todos nossos flats (#{@flats.count})" %></h1>
+<div class="container todo-o-index">
+  <h1><%= "Todos nossos flats (#{@flats.count})" %></h1>
 
-<ul>
-  <% @flats.each do |flat| %>
-    <li><%= link_to flat.name, flat_path(flat) %></li>
-  <% end %>
-</ul>
+  <div class="container anuncios">
+    <% @flats.each do |flat| %>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= flat.name %></h5>
+          <p class="card-text"><%= flat.address %></p>
+        </div>
+        <div class="card-body">
+          <a href="" class="card-link"><%= link_to "Mais informações", flat_path(flat) %></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
-
-<%= link_to "Adicionar um novo flat", new_flat_path %>
+</div>
