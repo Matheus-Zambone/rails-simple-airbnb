@@ -1,13 +1,11 @@
-<%= form_with model: @flat do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-  <%= f.label :description %>
-  <%= f.text_field :description %>
-  <%= f.label :price_per_night %>
-  <%= f.number_field :price_per_night %>
-  <%= f.label :number_of_guests %>
-  <%= f.number_field :number_of_guests %>
-  <%= f.submit %>
-<% end %>
+<div class="container mt-3">
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :picture_url %>
+    <%= f.submit %>
+  <% end %>
+</div>

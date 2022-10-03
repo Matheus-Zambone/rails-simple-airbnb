@@ -4,7 +4,7 @@
   <div class="container anuncios">
     <% @flats.each do |flat| %>
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <img src='<%= flat.picture_url %>' class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><%= flat.name %></h5>
           <p class="card-text"><%= flat.address %></p>
