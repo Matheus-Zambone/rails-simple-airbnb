@@ -1,0 +1,7 @@
+<h1><%= "All our Flats (#{@flats.count})" %></h1>
+
+<ul>
+  <% @flats.each do |flat| %>
+    <li><%= flat.name %></li>
+  <% end %>
+</ul>
