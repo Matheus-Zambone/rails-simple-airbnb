@@ -1,0 +1,64 @@
+.footer {
+  // margin-top: 1rem;
+  background: white;
+  border-top: 1px solid;
+  border-color: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #b8b8b8;
+  // opacity: 0.15;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: #D23333;
+}
+
+.footer .fa-heart {
+  color: #D23333;
+}
+
+.footer-copyright {
+  color: #b8b8b8;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.list-inline {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.privacidade:hover {
+  color: #D23333;
+}
+
+.faq:hover {
+  color: #D23333;
+}
+
+.ajuda:hover {
+  color: #D23333;
+}
