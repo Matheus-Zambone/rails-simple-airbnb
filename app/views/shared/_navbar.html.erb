@@ -11,6 +11,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <li class="nav-item active">
+          <%# #Search bar start %>
+          <%= form_with url: flats_path, method: :get, class: "d-flex", id:"search-bar" do %>
+            <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Encontre o local de sua estadía" %>
+            <%= submit_tag "Search", class: "btn btn-primary" %>
+          <% end %>
+          <%# #Search bar end %>
+        </li>
+        <li class="nav-item active">
           <button type="button" class="btn-add-flat"><%= link_to "Add Flat", new_flat_path %></button>
         </li>
       </ul>
