@@ -1,12 +1,34 @@
-<h2><%= @flat.name %></h2>
-<p><%= @flat.address %></p>
-<p><%= @flat.description %></p>
-<p><%= @flat.price_per_night %></p>
-<p><%= @flat.number_of_guests %></p>
+<div class="map" style="background-image: url('<%= @flat.picture_url %>')"></div>
 
-<%= link_to "Editar este Flat", edit_flat_path(@flat) %> |
-<%= link_to "Apagar este Flat",
-  flat_path(@flat),
-  data: {turbo_method: :delete, turbo_confirm: "Tem certeza que deseja apagar este Flat?"}
-%> |
-<%= link_to "Voltar à lista dos Flats", flats_path %>
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="flat-show-card">
+        <h2><%= @flat.name %></h2>
+        <p class="flat-show-address"><%= @flat.address %></p>
+      </div>
+
+      <div class="flat-show-card">
+        <h4>Conheça mais sobre o local...</h4>
+        <p><%= @flat.description %></p>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="flat-show-card">
+        <div class="flex">R$ <%= @flat.price_per_night %> noite</div>
+        <div class="flex"><%= @flat.number_of_guests %> pessoas</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container barra-acao">
+  <%= link_to "Editar este Flat", edit_flat_path(@flat) %> |
+  <%= link_to "Apagar este Flat",
+    flat_path(@flat),
+    data: {turbo_method: :delete, turbo_confirm: "Tem certeza que deseja apagar este Flat?"}
+  %> |
+  <%= link_to "Voltar à lista dos Flats", flats_path %>
+</div>
