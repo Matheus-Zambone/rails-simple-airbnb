@@ -1,4 +1,12 @@
 <div class="container todo-o-index">
+  <div class="row">
+    <div class="col">
+      <% if @query %>
+        <p>You searched for <strong><%= @query %></strong>. We found <%= @flats.count %> flats out of our <%= Flat.count %> on our website.</p>
+      <% end %>
+    </div>
+  </div>
+
   <h1><%= "Todos nossos flats (#{@flats.count})" %></h1>
 
   <div class="container anuncios">

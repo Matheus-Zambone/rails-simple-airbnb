@@ -1,22 +1,31 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
   background: white;
   border-bottom: 1px solid;
   border-color: rgba(0,0,0,0.2);
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-brand img {
   width: 8vw;
+}
+
+.btn-pesquisar {
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #ff375c;
+  background-color: transparent;
+  color: #ff375c;
+  margin-right: 10px;
 }
 
 .btn-add-flat {
   border: none;
   background-color: #ff375c;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 15px;
 }
 
