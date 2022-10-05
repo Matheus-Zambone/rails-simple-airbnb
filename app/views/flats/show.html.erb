@@ -23,12 +23,10 @@
   </div>
 </div>
 
-
 <div class="container barra-acao">
   <%= link_to "Editar este Flat", edit_flat_path(@flat) %> |
-  <%= link_to "Apagar este Flat",
-    flat_path(@flat),
-    data: {turbo_method: :delete, turbo_confirm: "Tem certeza que deseja apagar este Flat?"}
+  <%= link_to "Apagar este Flat", flat_path(@flat),
+    data: {turbo_method: :delete, turbo_confirm: "Tem certeza que deseja apagar a acomodação?"}
   %> |
   <%= link_to "Voltar à lista dos Flats", flats_path %>
 </div>
