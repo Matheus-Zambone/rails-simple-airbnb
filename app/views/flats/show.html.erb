@@ -24,11 +24,7 @@
 </div>
 
 <div class="container barra-acao">
-  <%= link_to "Editar este Flat", edit_flat_path(@flat) %> |
-  <%= link_to "Voltar à lista dos Flats", flats_path %> |
-  <%= link_to "Delete",
-  flat_path(@flat),
-  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-%>
-<%= link_to "Apagar anúncio", @flat, :class=>"btn-delete", data: { method: :delete, turbo_confirm: "Realmente deseja apagar o anúncio?" } %>
+  <button class="btn-edit-flat"><%= link_to "Editar este Flat", edit_flat_path(@flat) %></button> |
+  <button class="btn-back"><%= link_to "Voltar à lista dos Flats", flats_path %></button> |
+  <%= button_to "Apagar anúncio", @flat, :class=>"btn-delete", method: :delete %>
 </div>

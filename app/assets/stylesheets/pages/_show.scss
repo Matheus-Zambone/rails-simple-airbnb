@@ -22,6 +22,19 @@
 .flex {
   display: flex;
 }
+
+.container.barra-acao {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-edit-flat a {
+  text-decoration: none;
+}
+
+.btn-back a {
+  text-decoration: none;
+}
 // .row {
 //   width: 50vw;
 // }
