@@ -1,5 +1,6 @@
 // Specific CSS for your home-page
 
+
 .container.todo-o-index {
   margin-top: 3vh;
 }
@@ -10,10 +11,31 @@
   // border: 1px solid;
   // border-color: red;
 }
-// .card {
-//   margin-left: 5vw;
+
+// .card-body {
+//   display: block;
+//   width: 15rem;
+//   overflow: hidden;
+//   white-space: nowrap;
+//   text-overflow: ellipsis;
 // }
 
 .card-img-top {
-  max-height: 19vh;
+  // min-height: 20vh;
+  // max-height: 20vh;
+  height: 16vh;
+}
+
+.btn-show {
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #000;
+  background-color: transparent;
+  margin-right: 10px;
+  padding: 10px 15px;
+}
+
+.btn-show a {
+  text-decoration: none;
+  color: #000;
 }

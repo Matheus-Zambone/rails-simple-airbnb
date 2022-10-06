@@ -16,8 +16,9 @@
 }
 
 .footer-links {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  margin-left: 12px;
 }
 
 .footer-links a {
@@ -30,7 +31,7 @@
 
 .footer-links a:hover {
   opacity: 1;
-  color: #D23333;
+  color: #000;
 }
 
 .footer .fa-heart {
@@ -52,13 +53,13 @@
 }
 
 .privacidade:hover {
-  color: #D23333;
+  color: #000;
 }
 
 .faq:hover {
-  color: #D23333;
+  color: #000;
 }
 
 .ajuda:hover {
-  color: #D23333;
+  color: #000;
 }
