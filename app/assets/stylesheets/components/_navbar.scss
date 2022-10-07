@@ -1,8 +1,9 @@
 .navbar {
   justify-content: space-between;
-  background: white;
+  background: #f8f9fa;
   border-bottom: 1px solid;
   border-color: rgba(0,0,0,0.2);
+  margin-bottom: 2rem;
 }
 
 .navbar-collapse {
@@ -23,6 +24,11 @@
   padding: 10px 15px;
 }
 
+.btn-pesquisar:hover {
+  transition: 0.5s;
+  transform: scale(0.96);
+}
+
 .btn-add-flat {
   border: none;
   background-color: #000;
@@ -37,4 +43,9 @@
 
 .btn-add-flat:hover a {
   color: #ffff;
+}
+
+.btn-add-flat:hover {
+  transition: 0.5s;
+  transform: scale(0.96);
 }

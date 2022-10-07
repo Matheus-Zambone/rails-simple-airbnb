@@ -1,6 +1,6 @@
 .footer {
-  // margin-top: 1rem;
-  background: white;
+  margin-top: 2rem;
+  background: #f8f9fa;
   border-top: 1px solid;
   border-color: rgba(0,0,0,0.2);
   display: flex;
@@ -8,10 +8,9 @@
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: rgba(0,0,0,0.8);
   width: 100%;
   height: 9vh;
-  position: fixed;
   bottom: 0;
 }
 
@@ -22,7 +21,7 @@
 }
 
 .footer-links a {
-  color: #b8b8b8;
+  color: rgba(0,0,0,0.5);
   // opacity: 0.15;
   text-decoration: none;
   font-size: 20px;
@@ -30,19 +29,19 @@
 }
 
 .footer-links a:hover {
-  opacity: 1;
   color: #000;
 }
 
-.footer .fa-heart {
-  color: #D23333;
-}
-
 .footer-copyright {
-  color: #b8b8b8;
+  color: rgba(0,0,0,0.8);
   margin-top: 10px;
   font-size: 15px;
 }
+
+.footer-copyright li {
+  color: rgba(0,0,0,0.5)
+}
+
 
 .list-inline {
   display: flex;

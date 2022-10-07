@@ -1,13 +1,17 @@
 // Specific CSS for your home-page
-
-
-.container.todo-o-index {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+.container.todo-o-index h1, h4, p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .card {
   margin-top: 3vh;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transition: 1s;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-body h4 {
@@ -15,6 +19,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 18px;
 }
 
 .card-body p {
@@ -22,9 +27,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 14px;
 }
-
-
 
 .card-img-top {
   // min-height: 20vh;
@@ -43,5 +47,14 @@
 
 .btn-show a {
   text-decoration: none;
+  color: #000;
+}
+
+.btn-show:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+}
+
+.btn-show:hover a {
   color: #000;
 }
