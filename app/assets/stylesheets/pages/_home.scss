@@ -3,27 +3,33 @@
 
 .container.todo-o-index {
   margin-top: 3vh;
-}
-.container.anuncios {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 3vh;
-  // border: 1px solid;
-  // border-color: red;
+  margin-bottom: 3vh;
 }
 
-// .card-body {
-//   display: block;
-//   width: 15rem;
-//   overflow: hidden;
-//   white-space: nowrap;
-//   text-overflow: ellipsis;
-// }
+.card {
+  margin-top: 3vh;
+}
+
+.card-body h4 {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-body p {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 
 .card-img-top {
   // min-height: 20vh;
   // max-height: 20vh;
-  height: 16vh;
+  height: 18vh;
 }
 
 .btn-show {

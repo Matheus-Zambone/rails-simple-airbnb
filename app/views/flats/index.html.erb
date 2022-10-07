@@ -7,19 +7,26 @@
     </div>
   </div>
 
-  <h1><%= "All our accommodations (#{@flats.count})" %></h1>
 
-  <div class="container anuncios">
+  <div class="row">
+    <div class="col-12">
+      <h1><%= "All our accommodations (#{@flats.count})" %></h1>
+    </div>
+  </div>
+
+  <div class="row">
     <% @flats.each do |flat| %>
-      <div class="card" style="width: 18rem;">
-        <img src='<%= flat.picture_url %>' class="card-img-top">
-        <div class="card-body">
-          <h4 class="card-title"><%= flat.name %></h4>
-          <p class="card-text"><%= flat.address %></p>
-          <p class="card-text"><strong>$<%= flat.price_per_night %></strong> per night</p>
-        </div>
-        <div class="card-body">
-          <button class="btn-show"><a href="" class="card-link"><%= link_to "More Info", flat_path(flat) %></a></button>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src='<%= flat.picture_url %>' class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title"><strong><%= flat.name %></strong></h4>
+            <p class="card-text"><%= flat.address %></p>
+            <p class="card-text"><strong>$<%= flat.price_per_night %></strong> night</p>
+          </div>
+          <div class="card-body">
+            <button class="btn-show"><a href="" class="card-link"><%= link_to "More Info", flat_path(flat) %></a></button>
+          </div>
         </div>
       </div>
     <% end %>
