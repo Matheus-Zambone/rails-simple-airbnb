@@ -1,4 +1,10 @@
-<div class="container todo-o-index">
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h1><%= "All our accommodations (#{@flats.count})" %></h1>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col">
       <% if @query %>
@@ -7,29 +13,19 @@
     </div>
   </div>
 
-
-  <div class="row">
-    <div class="col-12">
-      <h1><%= "All our accommodations (#{@flats.count})" %></h1>
-    </div>
-  </div>
-
   <div class="row">
     <% @flats.each do |flat| %>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src='<%= flat.picture_url %>' class="card-img-top">
+          <div class="card-img-top" style="background-image: url('<%= flat.picture_url %>')"></div>
           <div class="card-body">
             <h4 class="card-title"><strong><%= flat.name %></strong></h4>
             <p class="card-text"><%= flat.address %></p>
             <p class="card-text"><strong>$<%= flat.price_per_night %></strong> night</p>
-          </div>
-          <div class="card-body">
             <button class="btn-show"><a href="" class="card-link"><%= link_to "More Info", flat_path(flat) %></a></button>
           </div>
         </div>
       </div>
     <% end %>
   </div>
-
 </div>

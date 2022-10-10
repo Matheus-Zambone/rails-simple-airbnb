@@ -1,5 +1,4 @@
-
-<div class="container form mt-3">
+<div class="form">
   <%= simple_form_for(@flat) do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
@@ -7,6 +6,6 @@
     <%= f.input :price_per_night %>
     <%= f.input :number_of_guests %>
     <%= f.input :picture_url%>
-    <%= f.submit %>
+    <%= f.button :submit, "Post my place!", class:"btn-dark" %>
   <% end %>
 </div>
